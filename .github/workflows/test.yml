@@ -1,0 +1,43 @@
+name: Run tests
+
+# Se ejecutará en cada push y pull request al repositorio
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Chequear el código del repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Paso 2: Instalar Bun
+      - name: Install Bun
+        run: curl -fsSL https://bun.sh/install | bash
+
+      # Paso 3: Añadir Bun al PATH (puedes necesitar ajustar esta línea dependiendo del entorno)
+      - name: Add Bun to PATH
+        run: echo "$HOME/.bun/bin" >> $GITHUB_PATH
+
+      # Paso 4: Instalar dependencias con Bun
+      - name: Install dependencies
+        run: bun install
+
+      # Paso 5: Ejecutar los tests
+      - name: Run tests
+        run: bun test
+
+      # (Opcional) Paso 6: Guardar los resultados de las pruebas (logs y cobertura)
+      - name: Save test results
+        if: always()  # Siempre guarda los resultados, incluso si falla
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: ./test-results # Cambia a la ruta donde se generan los logs o resultados
