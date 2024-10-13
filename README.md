@@ -5,7 +5,19 @@ A React hook for automatically proxying Valtio state.
 ## Installation
 
 ```bash
-npm install use-auto-proxy
+npm i valtio-hook-useautoproxy
+```
+or
+```bash
+pnpm i valtio-hook-useautoproxy
+```
+or
+```bash
+yarn add valtio-hook-useautoproxy
+```
+or
+```bash
+bun i valtio-hook-useautoproxy
 ```
 
 ## Usage

@@ -1,7 +1,8 @@
 {
   "name": "valtio-hook-useautoproxy",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
+  "version": "0.2.1",
   "scripts": {
     "test": "jest"
   },
