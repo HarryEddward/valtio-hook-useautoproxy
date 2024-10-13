@@ -2,7 +2,16 @@
   "name": "valtio-hook-useautoproxy",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.2.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarryEddward/valtio-hook-useautoproxy.git"
+  },
+  "homepage": "https://github.com/HarryEddward/valtio-hook-useautoproxy#readme",
+  "bugs": {
+    "url": "https://github.com/HarryEddward/valtio-hook-useautoproxy/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "test": "jest"
   },
