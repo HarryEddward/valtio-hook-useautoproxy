@@ -1,4 +1,4 @@
-# use-auto-proxy
+# Hook for Valtio, useAutoProxy()
 
 A React hook for automatically proxying Valtio state.
 
