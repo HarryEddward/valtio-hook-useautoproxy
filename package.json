@@ -2,7 +2,7 @@
   "name": "valtio-hook-useautoproxy",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.3.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/HarryEddward/valtio-hook-useautoproxy.git"
@@ -11,6 +11,14 @@
   "bugs": {
     "url": "https://github.com/HarryEddward/valtio-hook-useautoproxy/issues"
   },
+  "keywords": [
+    "valtio",
+    "react",
+    "hook",
+    "proxy",
+    "state management"
+  ],
+  "author": "Adrià Martín Martorell",
   "license": "MIT",
   "scripts": {
     "test": "jest"
