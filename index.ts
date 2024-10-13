@@ -1,0 +1,1 @@
+export { useAutoProxy } from "./src/useAutoProxy";
