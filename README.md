@@ -20,7 +20,7 @@ bun i valtio-hook-useautoproxy
 ## Usage
 
 ```typescript
-import { useAutoProxy } from 'use-auto-proxy';
+import { useAutoProxy } from 'valtio-hook-useautoproxy';
 import { proxy } from 'valtio';
 
 const state = proxy({
