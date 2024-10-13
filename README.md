@@ -11,7 +11,7 @@ npm i valtio-hook-useautoproxy
 pnpm i valtio-hook-useautoproxy
 ```
 ```bash
-yarn add valtio-hook-useautoproxy
+yarn i valtio-hook-useautoproxy
 ```
 ```bash
 bun i valtio-hook-useautoproxy
