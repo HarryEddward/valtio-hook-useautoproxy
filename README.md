@@ -2,8 +2,9 @@
 
 A React hook for automatically proxying Valtio state.
 
-![Simple GIF](https://github.com/HarryEddward/valtio-hook-useautoproxy/blob/main/.github/media/gif/simple-easy.gif)
-
+<div align="center">
+  <img src="https://github.com/HarryEddward/valtio-hook-useautoproxy/blob/main/.github/media/gif/simple-easy.gif" alt="Simple GIF" />
+</div>
 
 ## Installation
 
