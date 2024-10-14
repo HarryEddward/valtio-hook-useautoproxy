@@ -19,26 +19,55 @@ bun i valtio-hook-useautoproxy
 
 ## Usage
 
+```bash
+App.tsx
+```
 ```typescript
-import { useAutoProxy } from 'valtio-hook-useautoproxy';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 import { proxy } from 'valtio';
+import { useAutoProxy } from 'valtio-hook-useautoproxy';
+import { proxyState } from './proxy/proxyState';
 
-const state = proxy({
-  count: 0,
-  increment: () => { this.count++ }
-});
 
-function Component() {
-  const { count, increment } = useAutoProxy(state);
+function App() {
+  
+  
+  const { count, inc } = useAutoProxy(proxyState);
 
   return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-    </div>
-  );
+    <>
+      <div>
+        {count}
+        <button onClick={() => inc()}>Increase</button>
+      </div>
+    </>
+  )
 }
+
+export default App;
+
 ```
+
+```bash
+proxy/proxyState.ts
+```
+```typescript
+import { proxy } from "valtio";
+
+interface IState {
+    count: number;
+    inc: () => void;
+};
+
+export const proxyState = proxy<IState>({
+count: 1,
+inc: () => ++proxyState.count
+});
+```
+
 
 ## API
 
