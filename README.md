@@ -2,7 +2,8 @@
 
 A React hook for automatically proxying Valtio state.
 
-<div class="tenor-gif-embed" data-postid="9276124" data-share-method="host" data-aspect-ratio="1.60819" data-width="100%"><a href="https://tenor.com/view/simple-easy-easy-game-easy-life-deal-with-it-gif-9276124">Simple GIF</a>from <a href="https://tenor.com/search/simple-gifs">Simple GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+![Simple GIF](https://github.com/HarryEddward/valtio-hook-useautoproxy/blob/main/.github/media/gif/simple-easy.gif)
+
 
 ## Installation
 
