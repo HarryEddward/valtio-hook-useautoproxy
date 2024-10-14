@@ -1,8 +1,7 @@
 import { useSnapshot } from 'valtio';
 import type { Snapshot } from 'valtio';
 import { useRef, useEffect } from 'react';
-
-type AnyFunction = (...args: unknown[]) => unknown;
+import type { AnyFunction } from '../types/index';
 
 export function useAutoProxy<T extends object>(proxyState: T): Snapshot<T> {
   const stateRef = useRef<T>(proxyState);

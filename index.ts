@@ -1,1 +1,1 @@
-export { useAutoProxy } from "./src/useAutoProxy";
+export { useAutoProxy } from "./src/index";

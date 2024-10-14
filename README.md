@@ -2,6 +2,9 @@
 
 A React hook for automatically proxying Valtio state.
 
+![Simple GIF](https://tenor.com/es/view/simple-easy-easy-game-easy-life-deal-with-it-gif-9276124)
+
+
 ## Installation
 
 ```bash
@@ -65,8 +68,8 @@ interface IState {
 };
 
 export const proxyState = proxy<IState>({
-count: 1,
-inc: () => ++proxyState.count
+  count: 1,
+  inc: () => ++proxyState.count
 });
 ```
 

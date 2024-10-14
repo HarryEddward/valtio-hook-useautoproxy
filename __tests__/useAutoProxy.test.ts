@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { proxy } from 'valtio';
-import { useAutoProxy } from '../src/useAutoProxy';
+import { useAutoProxy } from '../src/hooks/useAutoProxy';
 import { useProxyState } from './proxys/proxyState';
 
 describe('useAutoProxy', () => {
