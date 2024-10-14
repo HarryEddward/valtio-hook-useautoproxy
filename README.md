@@ -2,8 +2,7 @@
 
 A React hook for automatically proxying Valtio state.
 
-![Simple GIF](https://tenor.com/es/view/simple-easy-easy-game-easy-life-deal-with-it-gif-9276124)
-
+<div class="tenor-gif-embed" data-postid="9276124" data-share-method="host" data-aspect-ratio="1.60819" data-width="100%"><a href="https://tenor.com/view/simple-easy-easy-game-easy-life-deal-with-it-gif-9276124">Simple GIF</a>from <a href="https://tenor.com/search/simple-gifs">Simple GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 ## Installation
 
