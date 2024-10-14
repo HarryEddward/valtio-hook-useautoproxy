@@ -1,23 +1,24 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { proxy } from 'valtio';
 import { useAutoProxy } from '../src/useAutoProxy';
+import { useProxyState } from './proxys/proxyState';
 
 describe('useAutoProxy', () => {
 
   it('should be reactive to external changes', () => {
-    const proxyState = proxy({ count: 0 });
-    const { result, rerender } = renderHook(() => useAutoProxy(proxyState));
 
-    expect(result.current.count).toBe(0);
+    const { result, rerender } = renderHook(() => useAutoProxy(useProxyState));
+
+    expect(result.current.count).toBe(1);
 
     act(() => {
-      proxyState.count = 5;  // Modificación segura
+      result.current.increment();  // Modificación segura
     });
 
     rerender();
 
-    console.log(proxyState.count);
-    expect(result.current.count).toBe(5);
+    console.log(result.current.count);
+    expect(result.current.count).toBe(2);
   });
 
 });
