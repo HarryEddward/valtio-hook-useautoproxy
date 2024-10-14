@@ -51,6 +51,8 @@ export default App;
 
 ```
 
+## DO NOT USE THE PROXY INSIDE OF ELEMENT WITH THE HOOK ❌
+
 ```bash
 proxy/proxyState.ts
 ```
